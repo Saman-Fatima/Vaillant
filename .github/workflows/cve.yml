@@ -24,7 +24,7 @@ jobs:
         uses: github/codeql-action/upload-sarif@v2
         with:
           # Path to SARIF file relative to the root of the repository
-          sarif_file: https://gitlab.com/epteck-pk/ept-teams/epte-ext/cve-check/bash.sarif
+          sarif_file: bash.sarif
           # Optional category for the results
           # Used to differentiate multiple results for one commit
           category: my-analysis-tool
