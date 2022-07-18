@@ -39,7 +39,7 @@
                 {
                   "physicalLocation": {
                     "artifactLocation": {
-                      "uri": "report.sarif"
+                      "uri": "openssl.sarif"
                     },
                     "region": {
                       "startLine": 2,
