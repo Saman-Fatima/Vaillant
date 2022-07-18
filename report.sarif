@@ -40,11 +40,6 @@
                   "physicalLocation": {
                     "artifactLocation": {
                       "uri": "openssl.sarif"
-                    },
-                    "region": {
-                      "startLine": 2,
-                      "startColumn": 7,
-                      "endColumn": 10
                     }
                   }
                 }
