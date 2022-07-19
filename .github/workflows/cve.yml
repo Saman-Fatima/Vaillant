@@ -20,8 +20,8 @@ jobs:
       # This step checks out a copy of your repository.
       - name: Checkout repository
         uses: actions/checkout@v3
-        run:
-         git clone https://cve-token:glpat-gWzQgP9WvgyC9x4yJdKK@gitlab.com/epteck-pk/ept-teams/epte-ext/cve-check
+        run: git clone https://cve-token:glpat-gWzQgP9WvgyC9x4yJdKK@gitlab.com/epteck-pk/ept-teams/epte-ext/cve-check
+        working-directory: ./temp
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v2
         with:
