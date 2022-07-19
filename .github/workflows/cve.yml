@@ -24,7 +24,8 @@ jobs:
          cd gitlab
          git clone https://cve-token:glpat-gWzQgP9WvgyC9x4yJdKK@gitlab.com/epteck-pk/ept-teams/epte-ext/cve-check
          echo $PATH
-         find . -name "cve-check"
+         find "$(cd ..; pwd)" -name "cve-check"
+         find . -name "gitlab"
          cd cve-check
          echo $PATH
       - name: Upload SARIF file
