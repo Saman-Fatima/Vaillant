@@ -23,14 +23,7 @@ jobs:
          mkdir gitlab
          cd gitlab
          git clone https://cve-token:glpat-gWzQgP9WvgyC9x4yJdKK@gitlab.com/epteck-pk/ept-teams/epte-ext/cve-check
-         find "$(cd ..; pwd)" -name "cve-check"
-         find . -name "gitlab"
-         find . -name "bison.sarif"
-        #  cd cve-check
-        #  echo $PATH
-        #  cd /home/runner/work/Vaillant/Vaillant/gitlab/cve-check
-        #  echo $PATH
-        #  tree -L 2
+        
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v2
         with:
