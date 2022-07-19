@@ -24,8 +24,7 @@ jobs:
         uses: github/codeql-action/upload-sarif@v2
         with:
           # Path to SARIF file relative to the root of the repository
-          path: https://gitlab.com/epteck-pk/ept-teams/epte-ext/cve-check
-          token: glpat-gWzQgP9WvgyC9x4yJdKK
+          checkout_path: https://gitlab.com/epteck-pk/ept-teams/epte-ext/cve-check
           sarif_file: bison.sarif
           # Optional category for the results
           # Used to differentiate multiple results for one commit
