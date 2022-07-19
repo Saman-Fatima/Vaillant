@@ -33,7 +33,7 @@ jobs:
         with:
           # Path to SARIF file relative to the root of the repository
           checkout_path: /home/runner/work/Vaillant/Vaillant/gitlab/cve-check
-          sarif_file: cve-check
+          sarif_file: bison.sarif
           # Optional category for the results
           # Used to differentiate multiple results for one commit
           category: my-analysis-tool
