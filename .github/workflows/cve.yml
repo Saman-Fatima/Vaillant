@@ -37,7 +37,7 @@ jobs:
           
           # checkout_path: /home/runner/work/Vaillant/Vaillant/gitlab/cve-check removed 
           # becuz using it gets commit oid from our gitlab commit & thus then it cannot upload results to gitlab. Removing it so that results get stored in github current repoo
-          sarif_file: /home/runner/work/Vaillant/Vaillant/gitlab/cve-check/bison.sarif # Path to SARIF file relative to the root of the repository
+          sarif_file: /home/runner/work/Vaillant/Vaillant/gitlab/cve-check # Path to SARIF file relative to the root of the repository
           # Optional category for the results
           # Used to differentiate multiple results for one commit
           category: my-analysis-tool
