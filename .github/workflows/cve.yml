@@ -20,14 +20,14 @@ jobs:
       # This step checks out a copy of your repository.
       - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          repository: https://cve-token:glpat-gWzQgP9WvgyC9x4yJdKK@gitlab.com/epteck-pk/ept-teams/epte-ext/cve-check
-          ref: v1.0
+        # with:
+        #   repository: https://cve-token:glpat-gWzQgP9WvgyC9x4yJdKK@gitlab.com/epteck-pk/ept-teams/epte-ext/cve-check
+        #   ref: v1.0
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v2
         with:
           # Path to SARIF file relative to the root of the repository
-          checkout_path: https://gitlab.com/epteck-pk/ept-teams/epte-ext/cve-check
+          checkout_path: https://cve-token:glpat-gWzQgP9WvgyC9x4yJdKK@gitlab.com/epteck-pk/ept-teams/epte-ext/cve-check
           sarif_file: bison.sarif
           # Optional category for the results
           # Used to differentiate multiple results for one commit
