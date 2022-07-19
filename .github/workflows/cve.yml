@@ -26,16 +26,16 @@ jobs:
          find "$(cd ..; pwd)" -name "cve-check"
          find . -name "gitlab"
          find . -name "bison.sarif"
-         cd cve-check
-         echo $PATH
-         cd /home/runner/work/Vaillant/Vaillant/gitlab/cve-check
-         echo $PATH
-         tree -L 2
+        #  cd cve-check
+        #  echo $PATH
+        #  cd /home/runner/work/Vaillant/Vaillant/gitlab/cve-check
+        #  echo $PATH
+        #  tree -L 2
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v2
         with:
           # Path to SARIF file relative to the root of the repository
-          checkout_path: /home/runner/work/Vaillant/Vaillant/gitlab/cve-check
+          # checkout_path: /home/runner/work/Vaillant/Vaillant/gitlab/cve-check
           sarif_file: /home/runner/work/Vaillant/Vaillant/gitlab/cve-check/bison.sarif
           # Optional category for the results
           # Used to differentiate multiple results for one commit
