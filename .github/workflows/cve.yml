@@ -20,13 +20,14 @@ jobs:
       # This step checks out a copy of your repository.
       - name: Checkout repository
         run: |
+         mkdir gitlab
+         cd gitlab
          git clone https://cve-token:glpat-gWzQgP9WvgyC9x4yJdKK@gitlab.com/epteck-pk/ept-teams/epte-ext/cve-check
          echo $PATH
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v2
         with:
           # Path to SARIF file relative to the root of the repository
-          checkout_path: https://cve-token:glpat-gWzQgP9WvgyC9x4yJdKK@gitlab.com/epteck-pk/ept-teams/epte-ext/cve-check
           sarif_file: cve-check
           # Optional category for the results
           # Used to differentiate multiple results for one commit
