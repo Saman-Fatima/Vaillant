@@ -31,6 +31,7 @@ jobs:
         uses: github/codeql-action/upload-sarif@v2
         with:
           # Path to SARIF file relative to the root of the repository
+          checkout_path: /home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
           sarif_file: cve-check
           # Optional category for the results
           # Used to differentiate multiple results for one commit
